@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact support</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|MuseoModerno">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body id="center">
+    <div>
+    <div id="introduction">
+        <h1>Product support</h1>
+        <p>Thank you for taking time to let us know about your experience with our product.<br>Please provide us with preliminary details so we can help you better when we call you!</p>
+    </div>
+
+    <div>
+        <form class="form">
+        <div>
+        <fieldset>
+            <legend style="background-color: black; color: white;">Basic information</legend>
+            <br>
+            <div class="title">
+                <label for="title">Title: </label><br>
+                <select id="titlelabel" name="title" id="mr">
+                    <option value="--">--Please select an option--</option>
+                    <option value="mr">Mr</option>
+                    <option value="ms">Ms</option>
+                    <option value="mrs">Mrs</option>
+                </select>
+            </div>
+            
+            <br><br>
+            <div class="center-name-work">
+                <div>
+                    <div class="name">
+                        <div class="spacing-for-fields">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" value="">
+                        </div>
+                        
+                        <div class="spacing-for-fields">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" value="">
+                        </div>
+                </div>
+                    <br><br>
+                <div class="name">
+                        <div class="spacing-for-fields">
+                            <label class="products"for="email">Email</label>
+                            <input type="email" name="email" id="email" value="">
+                        </div>
+                        <div class="spacing-for-fields">
+                            <label class="products" for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" value="">
+                        </div>
+                </div>
+            </div>
+                
+            <div>
+                    <br><br>
+                    <label for="work" >I am</label>
+                    <select name="work" id="work">
+                        <option value="">--Please select an option--</option>
+                        <option value="working">a working professional</option>
+                        <option value="student">a student</option>
+                        <option value="homemaker">a homemaker</option>
+                        <option value="freelancer">a freelancer</option>
+                        <option value="not_working">currently not working</option>
+                    </select>
+            </div>
+
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend style="background-color: black; color: white;">Product information</legend>
+            <div id="fs2">
+                <div>
+                    <p class="product-txt">Please select the product you are contacting us for:</p>
+                    
+                    <input type="radio" name="product" id="product1" value="">
+                    <label for="product1" class="products">Helven X1 Pro</label>
+                    <input type="radio" name="product" id="product2" value="">
+                    <label for="product2" class="products">Helvenphone</label>
+                    <input type="radio" name="product" id="product3" value="">
+                    <label for="product3" class="products">HelvenBook Air</label>
+                    <br>
+                </div>
+                <br>
+                <div id="align-stars" >
+                    <br>
+                    <label for="star" >How would you rate the product?</label>
+                    <div name="star" class="rating">
+                        <input type="radio" name="rating" id="star1"><label for="star1"></label>
+                        <input type="radio" name="rating" id="star2"><label for="star2"></label>
+                        <input type="radio" name="rating" id="star3"><label for="star3"></label>
+                        <input type="radio" name="rating" id="star4"><label for="star4"></label>
+                        <input type="radio" name="rating" id="star5"><label for="star5"></label>
+                    </div>
+                <br>
+                </div>
+                <br>
+                <div>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" name="subject" id="subject" size="70"><br><br>
+        
+                    <label for="review">Description</label><br>
+                    <textarea name="comments" rows="5" maxlength="200" cols="60" id="comments"></textarea>
+                    <br><br>
+                </div>
+
+                <div id="file-wrapper">
+                    <div class="products">
+                        <label for="files">Attach necessary images if possible</label>
+                    </div>
+                    <div>
+                        <input type="file" id="file"></div>
+                    </div>
+                </div>
+            <br>
+
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend style="background-color: black; color: white;">Schedule the call</legend>
+            <div id="fs3-position">
+                <div id="schedule-block">
+                    <div>
+                        <p>Please select the available date and time to schedule the call</p>
+                    </div>
+                    <div>
+                        <input name="date" type="datetime-local" id="date">
+                    </div>
+                    <br><br>
+                </div>
+                <div>
+                    <label = for="comments">Any special requests?</label><br>
+                    <textarea name="comments" rows="2" maxlength="200" cols="60" id="textarea-color"></textarea><br><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="subscribe1" id="subscribe1">
+                    <label for="subscribe1">Contact me in the next business hours in case I'm unavailable</label>
+                </div>
+            </div>    
+        </fieldset>
+        <br>
+        </div>
+        <div class="reset-submit-wrapper">
+            <br>
+            <input class="reset-submit" id="reset-btn" type="reset">
+            <input class="reset-submit" id="submit-btn" type="submit">
+        </div>
+        <br><br>
+        <br>
+
+        </form>  
+    </div>
+    </div>
+</body>
+</html>

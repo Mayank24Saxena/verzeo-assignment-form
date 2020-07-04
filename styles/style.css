@@ -1,0 +1,268 @@
+/* Open Sans, MuseoModerno */
+html {
+    background-color: rgb(251, 223, 65);
+}
+body {
+    background-color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#center{
+    display: flex;
+    justify-content: center ;
+    font-family: 'Open Sans';
+}
+fieldset{
+    border: 2px solid black;
+    border-radius: .3em;
+}
+
+h1, legend {
+    font-family: 'MuseoModerno';
+    font-size: 1em;
+    justify-content: center;
+    text-align: center;
+}
+label{
+    font-size: 1.1em;
+}
+
+#introduction {
+    background: white;
+}
+
+h1{
+    font-size: 3.2em;  
+    background-color: black;
+    color: white;
+}
+
+h1 + p {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reset-submit-wrapper {
+    display: inline-block
+}
+
+.reset-submit {
+    width: 8em;
+    height: 3em;
+}
+
+
+.title{
+    padding-left: 2em;
+}
+
+#titlelabel{
+    margin-top: .5em;
+}
+
+.spacing-for-fields{
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.name {
+    display: flex;
+    justify-content: space-around;
+}
+
+.name-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.center-name-work{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+#work{
+    margin-bottom: 1em;
+}
+
+#fs2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-txt{
+    text-align: center;
+}
+.products {
+    padding-right: 1.5em;
+}
+#align-stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#file-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 4em;
+}
+#file{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .4em;
+    margin-left: .5em;
+}
+
+#fs3-position{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#schedule-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Styles for each form element using their ID */
+#reset-btn {
+    background-color: white;
+    color: black;
+    margin: 1em;
+    border-radius: 16px;
+    border-color:black;
+    padding: 10px 20px;
+}
+#reset-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+#submit-btn {
+    background-color: white;
+    color: black;
+    margin: 1em;
+    border-radius: 16px;
+    border-color: black;
+    padding: 10px 20px;
+}
+#submit-btn:hover {
+    background-color: rgb(43, 182, 43);
+    border-color: black;
+    color: white;
+}
+
+#subscribe1 {
+    
+}
+
+#textarea-color{
+    background-color: white;
+}
+#textarea-color:hover{
+    background-color: rgb(246, 216, 47);
+}
+#date:hover{
+    background-color: rgb(246, 216, 47);
+}
+#file:hover{
+    background-color: rgb(246, 216, 47);
+}
+#comments:hover{
+    background-color: rgb(246, 216, 47);
+}
+#subject:hover{
+    background-color: rgb(246, 216, 47);
+}
+#titlelabel:hover{
+    background-color: rgb(246, 216, 47);
+}
+#fname:hover{
+    background-color: rgb(246, 216, 47);
+}
+#lname:hover{
+    background-color: rgb(246, 216, 47);
+}
+#email:hover{
+    background-color: rgb(246, 216, 47);
+}
+#phone:hover{
+    background-color: rgb(246, 216, 47);
+}
+
+#work:hover{
+    background-color: rgb(246, 216, 47);
+}
+
+
+/* Star rating CSS */
+.rating{
+    display: flex;
+    direction:rtl;
+    justify-content: flex-end;
+    padding-bottom: 2%;
+}
+
+.rating input{
+    display: none;
+}
+
+.rating label {
+    display: inline-block;
+    width: 20px;
+    position: relative;
+    cursor: pointer;
+     
+}
+
+.rating label:before {
+    content: "\2605";
+    position: absolute;
+    font-size: 18px;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    border: 10px;
+}
+
+.rating label:after {
+    content: "\2605";
+    position: absolute;
+    font-size: 18px;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    color: rgb(255, 241, 42);
+    opacity: 0;
+}
+
+.rating label:hover:after{
+    opacity: 1;
+}
+.rating label:hover ~ label:after,
+.rating label:checked ~ label:after{
+    opacity: 1;
+}
